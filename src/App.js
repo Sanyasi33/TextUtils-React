@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  //This is for bootstrap css 
+import Navbar from './components/Navbar';       //This is for customized Navbar
+import TextForm from './components/TextForm';   //This is for customized TextForm
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar title = "TextUtils" aboutText = "Developed by Mr. Sahu"/>
+      <div className="container">
+        <TextForm heading="Enter the text to analyze"/>
+      </div>
+    </>
   );
 }
 
